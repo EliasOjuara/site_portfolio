@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <style>
         /* Adicionar estilo para esconder as seções inicialmente */
-        section {
+        section:not(#contato) {
             display: none;
         }
     </style>
@@ -31,9 +31,9 @@
                     <a href="#cursos">Cursos</a>
                 </li>
                 <li>
-                    <a href="contato">Contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
-            </ul>
+            </ul>     
         </nav>
 
         <header>
@@ -85,6 +85,23 @@
                 <p>
                     - Metodologias Ágeis pela Digital Innovation One
                 </p>
+            </section>
+            <section id="contato">
+                <h3>Contato:</h3>
+                <form class="contato-form" action="https://formsubmit.co/el/cisebe" method="POST">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Mensagem</label>
+                        <input type="text" id="message" name="message" required>
+                    </div>
+                    <button type="submit">Send</button>
+                    <input type="hidden" name="_next" value="https://adrianasaty.github.io/easy-portfolio/thanks.html">
+                    <input type="hidden" name="_subject" value="New submission!">
+                </form>
+
             </section>
         </main>
 
