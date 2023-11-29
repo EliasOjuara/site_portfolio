@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-br  ">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,12 @@
     <title>Portfólio Pessoal</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        /* Adicionar estilo para esconder as seções inicialmente */
+        section {
+            display: none;
+        }
+    </style>
 
 </head>
 
@@ -16,10 +22,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Sobre mim</a>
+                    <a href="#sobre-mim">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="project.html">Projetos</a>
+                    <a href="#formacao">Formação</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
                 </li>
                 <li>
                     <a href="contact.html">Contato</a>
@@ -29,7 +38,7 @@
 
         <header>
             <div class="center">
-                <img src="./img/Elias2.jpg"></img>
+                <img src="./img/Elias2.jpg" alt="Elias"></img>
             </div>
             <h1>Elias Araujo</h1>
             <h2>Estudante de Analise e Desenvolvimento de Sistemas</h2>
@@ -37,7 +46,7 @@
 
         <main>
             <br>
-            <section>
+            <section id="sobre-mim">
                 <h3>Sobre mim:</h3>
                 <p>
                     Me chamo Elias, sou desenvolvedor Frontend e atualmente
@@ -55,7 +64,7 @@
                 </p>
             </section>
             <br>
-            <section>
+            <section id="formacao">
                 <h3>Formação:</h3>
                 <h4>
                     Centro Universitário Internacional UNINTER
@@ -65,7 +74,7 @@
                 </p>                 
             </section>
             <br>
-            <section>
+            <section id="cursos">
                 <h3>Cursos:</h3>
                 <p> 
                     - Python Essentials I pela Cisco - Maio de 2023
@@ -81,15 +90,28 @@
 
         <footer>
             <a href="https://github.com/EliasOjuara" target="_blank" rel="noopener noreferrer">
-                <img src="./img/github.svg"></img>
+                <img src="./img/github.svg" alt="Github"></img>
                 <p>Github</p>
             </a>
             <a href="https://www.linkedin.com/in/elias-araujo-dev/" target="_blank" rel="noopener noreferrer">
-                <img src="./img/linkedin.svg"></img>
+                <img src="./img/linkedin.svg" alt="Linkedin"></img>
                 <p>Linkedin</p>
             </a>
         </footer>
     </div>
+    <!-- Adicionar um script para mostrar a seção correspondente quando clicar no link -->
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                document.getElementById(targetId).style.display = 'block';
+            });
+        });
+    </script>
 
 </body>
 
