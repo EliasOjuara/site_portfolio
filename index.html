@@ -18,9 +18,12 @@
 </head>
 
 <body>
+    <!-- Tag genérica que representa uma divisão ou seção -->
     <div class="container">
+        <!-- Barra de navegação principal -->
         <nav>
             <ul>
+                <!-- Itens e links de navegação -->
                 <li>
                     <a href="#sobre-mim">Sobre mim</a>
                 </li>
@@ -35,15 +38,18 @@
                 </li>
             </ul>     
         </nav>
-
+        
         <header>
+            <!-- Div para centralizar o conteúdo -->
             <div class="center">
                 <img src="./img/Elias2.jpg" alt="Elias"></img>
             </div>
+            <!-- Título e subtítulo principal do portfólio -->
             <h1>Elias Araujo</h1>
             <h2>Estudante de Analise e Desenvolvimento de Sistemas</h2>
         </header>
 
+        <!-- Inicio das seções" -->
         <main>
             <br>
             <section id="sobre-mim">
@@ -78,53 +84,27 @@
                         - <a href="https://hortfrut.vercel.app/" target="_blank">Site Hortfrut</a> 
                     </p>
             </section>
+            <!-- Fim da Seção "Cursos e Projetos" -->
+            <!-- Seção "Contato" -->
             <section id="contato">
                 <h3>Contato:</h3>
+                <!-- Formulário de Contato -->
                 <div class="contato-form">
                     <h1>Entre em contato</h1>
                     <form>
-                      <input
-                        type="text"
-                        placeholder="Nome"
-                        class="contato-form-txt"
-                        required
-                      />
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        class="contato-form-txt"
-                        required
-                      />
-                      <textarea
-                        placeholder="Mensagem"
-                        class="contato-form-txtarea"
-                        required
-                      ></textarea>
-                      <input
-                        type="submit"
-                        name="Submit"
-                        class="contato-form-btn"
-                        required
-                      />
+                      <input type="text" placeholder="Nome" class="contato-form-txt" required />
+                      <input type="text" placeholder="Email" class="contato-form-txt" required />
+                      <textarea placeholder="Mensagem" class="contato-form-txtarea" required></textarea>
+                      <input type="submit" name="Submit" class="contato-form-btn"required />
                     </form>
                   </div>
-                <!--<form class="contato-form" action="https://formsubmit.co/el/eliasaraujo" method="POST">
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="message">Mensagem</label>
-                        <input type="text" id="message" name="message" required>
-                    </div>
-                    <button type="submit">Enviar</button>
-                    <input type="hidden" name="_next" value="https://portfolio-elias-lilac.vercel.app/site_portfolio
-                    /thanks.html">
-                    <input type="hidden" name="_subject" value="New submission!"> -->
+                <!-- Fim do Formulário de Contato -->  
                 </form>
             </section>
         </main>
+        <!-- Fim das seções -->
 
+        <!-- Links no rodapé da pagina para direcionar para Github e Linkedin-->
         <footer>
             <a href="https://github.com/EliasOjuara" target="_blank" rel="noopener noreferrer">
                 <img src="./img/github.svg" alt="Github"></img>
@@ -136,7 +116,7 @@
             </a>
         </footer>
     </div>
-    <!-- Adicionar um script para mostrar a seção correspondente quando clicar no link -->
+    <!-- Script para mostrar a seção correspondente quando clicar no link -->
     <script>
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', function (e) {
