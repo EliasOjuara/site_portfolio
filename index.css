@@ -68,19 +68,36 @@ nav a:hover {
 }
 
 .contato-form input{
-    width: 100%;
+    width: 20%;
     padding: 8px 0;
     margin: 8px 0;
 }
 
 .contato-form input[type=text] {
-    height: 100px;
+    height: 20px;
 }
 
-button {
-    color: black;
-    background-color: white;
-    border: none;
-    width: 100px;
-    height: 30px;
-}
+.contato-form-txtarea {
+    width: 100%; /* Define a largura para ocupar 100% da largura disponível */
+    height: 100px; /* Define a altura da caixa de mensagem */
+    padding: 8px 0; /* Adiciona um preenchimento interno à caixa de mensagem */
+    margin-bottom: 15px; /* Adiciona espaço na parte inferior da caixa de mensagem */
+    resize: vertical; /* Permite a redimensionamento vertical */
+    font-size: 15px; /* Define o tamanho da fonte */
+  }
+
+/* Estilos para o botão */
+.contato-form-btn {
+    background-color:aqua; /* Cor de fundo do botão */
+    color:black; /* Cor do texto do botão */
+    padding: 10px 20px; /* Preenchimento interno do botão (topo/baixo, esquerda/direita) */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Adiciona um cursor ao passar o mouse sobre o botão */
+  }
+  
+  /* Estilos adicionais ao passar o mouse sobre o botão */
+  .contato-form-btn:hover {
+    background-color:darkorange; /* Cor de fundo alterada ao passar o mouse */
+  }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br  ">
+<html lang="pr-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <style>
         /* Adicionar estilo para esconder as seções inicialmente */
-        section:not(#contato) {
+        section {
             display: none;
         }
     </style>
@@ -28,7 +28,7 @@
                     <a href="#formacao">Formação</a>
                 </li>
                 <li>
-                    <a href="#cursos">Cursos</a>
+                    <a href="#portfolio">Portfólio</a>
                 </li>
                 <li>
                     <a href="#contato">Contato</a>
@@ -49,7 +49,7 @@
             <section id="sobre-mim">
                 <h3>Sobre mim:</h3>
                 <p>
-                    Me chamo Elias, sou desenvolvedor Frontend e atualmentetrabalho nas forças armadas, lugar onde estou desenvolvendo ainda mais minhas habilidades para poder migrar definitivamente de profissão. Atualmente trabalho mais especificamente no setor se licitações e contratos mas isso não me ipede de por em pratica meus conhecimentos como desenvolvedor e melhorar meu desempenho em minhas funções. Alem disso, tenho trabalhado com freelancer a um ano e dois meses. Minhas especialidades incluem HTML, CSS, Python e JavaScript e seus reséctivos frameworks. 
+                    Me chamo Elias, sou desenvolvedor Frontend e atualmentetrabalho nas forças armadas, lugar onde estou desenvolvendo ainda mais minhas habilidades para poder migrar definitivamente de profissão. Atualmente trabalho mais especificamente no setor se licitações e contratos mas isso não me ipede de por em pratica meus conhecimentos como desenvolvedor e melhorar meu desempenho em minhas funções. Alem disso, tenho trabalhado com freelancer a um ano e dois meses. Minhas especialidades incluem HTML, CSS, Python, JavaScript e seus reséctivos frameworks. 
                 </p>
             </section>
             <br>
@@ -63,21 +63,52 @@
                 </p>                 
             </section>
             <br>
-            <section id="cursos">
-                <h3>Cursos:</h3>
-                <p> 
-                    - Python Essentials I pela Cisco - Maio de 2023
-                </p>
-                <p> 
-                    - Estágio de Redes TCP/IP e Segurança da Informação pelo 5º CTA
-                </p>
-                <p>
-                    - Metodologias Ágeis pela Digital Innovation One
-                </p>
+            <section id="portfolio">
+                <h3>Cursos e Projetos:</h3>
+                    <p> 
+                        - Python Essentials I pela Cisco - Maio de 2023
+                    </p>
+                    <p>
+                        - Estágio de Redes TCP/IP e Segurança da Informação pelo 5º CTA 
+                    </p>
+                    <p>
+                        - Metodologias Ágeis pela Digital Innovation One
+                    </p>
+                    <p>
+                        - <a href="https://hortfrut.vercel.app/" target="_blank">Site Hortfrut</a> 
+                    </p>
             </section>
             <section id="contato">
                 <h3>Contato:</h3>
-                <form class="contato-form" action="https://formsubmit.co/el/eliasaraujo" method="POST">
+                <div class="contato-form">
+                    <h1>Entre em contato</h1>
+                    <form>
+                      <input
+                        type="text"
+                        placeholder="Nome"
+                        class="contato-form-txt"
+                        required
+                      />
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        class="contato-form-txt"
+                        required
+                      />
+                      <textarea
+                        placeholder="Mensagem"
+                        class="contato-form-txtarea"
+                        required
+                      ></textarea>
+                      <input
+                        type="submit"
+                        name="Submit"
+                        class="contato-form-btn"
+                        required
+                      />
+                    </form>
+                  </div>
+                <!--<form class="contato-form" action="https://formsubmit.co/el/eliasaraujo" method="POST">
                     <div>
                         <label for="email">E-mail</label>
                         <input type="email" name="email" required>
@@ -86,12 +117,11 @@
                         <label for="message">Mensagem</label>
                         <input type="text" id="message" name="message" required>
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit">Enviar</button>
                     <input type="hidden" name="_next" value="https://portfolio-elias-lilac.vercel.app/site_portfolio
                     /thanks.html">
-                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_subject" value="New submission!"> -->
                 </form>
-
             </section>
         </main>
 
